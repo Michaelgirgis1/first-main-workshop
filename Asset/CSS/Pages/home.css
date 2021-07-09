@@ -1,0 +1,14 @@
+
+.home-page .home-page__service {
+    width: calc(100% - 320px);
+    margin: 0 auto;
+
+}
+.listing-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.listing-card {
+    flex: 0 0 33.333333%;
+    max-width: 33.33333%;
+}

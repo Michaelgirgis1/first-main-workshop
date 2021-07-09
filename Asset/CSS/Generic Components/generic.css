@@ -1,0 +1,112 @@
+/* start define font famliy */
+@font-face {
+    font-family: "muli-regular";
+    src: url("../../Fonts/MuliRegular/Muli.eot");
+    /* IE9 Compat Modes */
+    src: url("../../Fonts/MuliRegular/Muli.eot?#iefix") format("embedded-opentype"),
+        url("../../Fonts/MuliRegular/Muli.woff") format("woff"),
+        url("../../Fonts/MuliRegular/Muli.ttf") format("truetype"),
+        url("../../Fonts/MuliRegular/Muli.woff2") format("svg");
+    /* Legacy iOS */
+}
+
+/* start generic button  */
+.btn-blue button {
+    font-family: "muli-regular";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #525ffb;
+    border-radius: 100px;
+    border: solid 2px #525ffb;
+
+    padding: 13px 10px;
+    min-width: 147px;
+}
+
+/* end genric button */
+
+/* star header style */
+
+.header .header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    align-items: center;
+}
+.header .header__nav {
+    /* background-color: #000; */
+}
+.header .header__nav .header__nav__navbar__colapse__list {
+    list-style: none;
+    padding: 0;
+}
+.header .header__nav .header__nav__navbar__colapse__list li {
+    display: inline-block;
+    /* padding: 10px; */
+    background-color: #525ffb;
+    margin-right: 10px;
+}
+.header .header__nav .header__nav__navbar__colapse__list li a {
+    /* padding: 10px;
+    margin-right: 10px; */
+    padding: 10px;
+    display: inline-block;
+    color: white;
+}
+.header .header__nav .header__nav__navbar__colapse__list li:hover a {
+    /* padding: 10px;
+    margin-right: 10px; */
+    color: white;
+}
+.header .header__nav .header__nav__navbar__menu-icon {
+    display: none;
+}
+/* end header section  */
+
+/* genrate genric container */
+.container {
+    width: calc(100% - 260px);
+    margin: 0 auto;
+}
+
+/* start media query */
+
+@media (max-width: 1366px) {
+    .container {
+        width: calc(100% - 120px);
+    }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .container {
+        width: calc(100% - 90px);
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+    .header .header__nav .header__nav__navbar__menu-icon {
+        display: block;
+    }
+    .header .header__nav .header__nav__navbar__colapse__list li {
+        display: block;
+    }
+    .header .header__nav .header__nav__navbar__colapse {
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    .header .header__nav .header__nav__navbar__menu-icon:hover + .header__nav__navbar__colapse { 
+        left: 0;
+        opacity: 1;
+
+    }
+    
+}
+
+/* @keyframes anima */
+
+/* end media query */
